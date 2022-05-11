@@ -1,10 +1,10 @@
 import Axios from 'axios';
 import React from 'react';
 import './Main.css';
-import image1 from '../image/1.jpg';
+import image1 from '../image/bg2.jpg';
 import image2 from '../image/bg1.jpg';
-import image3 from '../image/3.jpg';
-import image4 from '../image/bg2.jpg';
+import image3 from '../image/6.webp';
+import image4 from '../image/4.jpg';
 
 class Main extends React.Component{
     constructor(){
@@ -114,7 +114,7 @@ class Main extends React.Component{
     render(){
     return( 
         <div className='main'>        
-            <select id='select'>
+            <select id='select' onClick={this.handler}>
             {/* <option selected>Choose</option> */}
                 <option value='Solapur'>Solapur</option>
                 <option value='Pune'>Pune</option>
@@ -132,7 +132,7 @@ class Main extends React.Component{
                 <option value='Satara'>Satara</option>
                 <option value='Sangli'>Sangli</option>
             </select>
-            <input id='submit' type='submit' onClick={this.handler}></input>
+            {/* <input id='submit' type='submit' onClick={this.handler}></input> */}
             <div id='city'>{this.state.city}</div>
             <div id='date'>{this.state.date}</div>
             <div id='environment'>{this.state.environment}</div>
